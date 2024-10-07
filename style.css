@@ -16,21 +16,26 @@ body {
     display: flex;
     min-height: 100vh;
     max-height: 100vh;
+    font-family: system-ui, sans-serif;
 }
 
 div.image-sidebar {
     background-image: url("./img/alice-pasqual-xdD-x2Y2SPI-unsplash.jpg");
     background-size: 100% 100%;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
 }
 
 .banner {
-    height: 10%;
+    height: 15%;
     background-color: rgba(0, 0, 0, 0.2);
     margin-top: 8rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    padding: 0.5rem;
 }
 
 .banner img {
@@ -39,7 +44,16 @@ div.image-sidebar {
 
 .banner .logo-name {
     font-family: 'montserratregular';
-    font-size: 1.5rem;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.image-sidebar .photo-credit {
+    color: #ffffff;
+    text-align: center;
+}
+
+.photo-credit a {
     color: #ffffff;
 }
 
@@ -49,13 +63,18 @@ div.right-content {
 }
 
 .right-content .intro {
-    padding: 6rem 8rem 2rem 2rem;
+    padding: 2rem 8rem 2rem 2rem;
     flex: 0 1 0;
+    line-height: 1.5;
+}
+
+.intro p + p {
+    margin-top: 2rem;
 }
 
 form .form-controls {
-    border: 1px solid rgb(160, 160, 160);
-    box-shadow: 0 0 10px;
+    box-shadow: 0 5px 10px #c6c6c6;
+    padding: 1rem 2rem 2rem 2rem;
 }
 
 div.right-content > div,
@@ -63,11 +82,58 @@ div.right-content > form {
     flex-grow: 1;
 }
 
+.right-content p {
+    font-weight: bold;
+}
+
+.right-content form {
+    min-width: 0;
+}
+
 .form-controls .form-row {
     display: flex;
+    gap: 2rem;
+}
+
+.form-controls .form-row + .form-row {
+    margin-top: 1rem;
+}
+
+.form-controls p {
+    margin-bottom: 1rem;
 }
 
 .form-row .input-field {
     display: flex;
     flex-direction: column;
+}
+
+.input-field input {
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+}
+
+.input-field label {
+    font-size: 0.75rem;
+}
+
+.submit-form {
+    padding: 2rem;
+}
+
+.submit-form button {
+    background-color: #9a64ab;
+    padding: 0.5rem 2rem;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 2rem;
+}
+
+.submit-form a {
+    color: #9a64ab;
+}
+
+.submit-form p {
+    font-weight: 400;
 }

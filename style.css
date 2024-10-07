@@ -22,9 +22,11 @@ body {
 div.image-sidebar {
     background-image: url("./img/alice-pasqual-xdD-x2Y2SPI-unsplash.jpg");
     background-size: 100% 100%;
-    max-width: 40%;
+    min-width: 28rem;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 2rem;
 }
 
 .banner {
@@ -111,6 +113,11 @@ div.right-content > form {
 .input-field input {
     border: 1px solid #c6c6c6;
     border-radius: 5px;
+}
+
+.input-field input:focus {
+    outline: none;
+    border: 1px solid blue;
 }
 
 .input-field label {

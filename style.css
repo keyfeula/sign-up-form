@@ -5,3 +5,69 @@
     font-weight: normal;
     font-style: normal;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+div.image-sidebar {
+    background-image: url("./img/alice-pasqual-xdD-x2Y2SPI-unsplash.jpg");
+    background-size: 100% 100%;
+}
+
+.banner {
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.banner img {
+    max-height: 100%;
+}
+
+.banner .logo-name {
+    font-family: 'montserratregular';
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+div.right-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-content .intro {
+    padding: 6rem 8rem 2rem 2rem;
+    flex: 0 1 0;
+}
+
+form .form-controls {
+    border: 1px solid rgb(160, 160, 160);
+    box-shadow: 0 0 10px;
+}
+
+div.right-content > div,
+div.right-content > form {
+    flex-grow: 1;
+}
+
+.form-controls .form-row {
+    display: flex;
+}
+
+.form-row .input-field {
+    display: flex;
+    flex-direction: column;
+}
